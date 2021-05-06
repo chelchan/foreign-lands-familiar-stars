@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Serif+TC:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Familiar Stars</title>
+  </head>
+  <body class="fs-bg">
+    <!-- The video -->
+    <video muted autoplay loop id="vrVideo">
+      <source src="./assets/Family Orange Orchard VR.mp4" type="video/mp4" />
+    </video>
+    <!-- Optional: some overlay text to describe the video -->
+    <div class="vid-content-container">
+      <div id="vid-title">
+        <h2>
+          zhon hi / Return
+          <button id="unmute-button" onclick="unmute()">Sound</button>
+        </h2>
+      </div>
+      <div class="vid-copy-container">
+        <div class="vocab">
+          zhon hi <span class="tc">轉去</span>
+          <span class="translation">Return home</span><br />
+          <span class="definition">Return home</span><br />
+        </div>
+        <div class="description">
+          <i>Memory is fuzzy and romanticized.<br /></i>
+          A recreation of the family orange orchard. My paternal grandfather’s
+          childhood home sits in the hills, overlooking the orchard in the
+          basin. The family refer to this property as the old house.
+        </div>
+      </div>
+      <h1 class="title-fs">
+        <a href="./familiar-stars.html">Familiar Stars</a>
+      </h1>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,286 @@
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "EB Garamond", serif;
+  color: antiquewhite;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.fs-bg,
+.fl-bg,
+.im-bg,
+.landing-bg {
+  background-color: black;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.fs-bg,
+.landing-bg {
+  background-image: url("../assets/stars-background.png");
+  overflow-x: hidden;
+}
+
+.fl-bg {
+  background-image: url("../assets/sunset-sky-background.png");
+  overflow-x: hidden;
+}
+
+.im-bg {
+  background-image: url("../assets/oranges-background.png");
+}
+
+body,
+p,
+#landing-copy {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#landing-content {
+  width: 100%;
+  margin: auto;
+  position: absolute;
+  top: 45%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#links-container {
+  display: block;
+  text-align: center;
+}
+
+#landing-link,
+#landing-copy {
+  display: inline-block;
+  padding: 50px;
+}
+
+#landing-link {
+  font-style: italic;
+}
+
+/* #landing-copy {
+    padding: 2%;
+} */
+
+div.projects-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 30% auto 20%;
+  overflow-y: hidden;
+  margin: 10%;
+  top: 15%;
+  position: absolute;
+}
+
+div.project-title-a {
+  text-align: right;
+  padding: 70px;
+}
+
+div.project-title-b {
+  text-align: center;
+  padding: 20px;
+}
+
+div.content-container {
+  margin: auto;
+  width: 50%;
+  max-width: 800px;
+  padding: 10%;
+}
+
+div.copy-container {
+  display: grid;
+  grid-template-columns: 45% auto;
+  overflow-y: auto;
+}
+
+div.journals {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div.text {
+  margin: 0px 20px;
+}
+
+p.text {
+  color: antiquewhite;
+  width: 400px;
+  padding: 0px 50px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  color: antiquewhite;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 16px;
+  color: antiquewhite;
+}
+
+#landing-copy {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.title-fl {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 20px;
+}
+
+.title-fs {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  padding: 20px;
+}
+
+.vocab {
+  font-weight: 600;
+}
+
+span.tc {
+  font-family: "Noto Serif TC", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.translation {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.definition,
+.description {
+  font-weight: 400;
+}
+
+.img {
+  width: 100%;
+  max-width: 800px;
+}
+
+.handwriting {
+  width: auto;
+  max-height: 600px;
+}
+
+a:link {
+  color: antiquewhite;
+}
+
+a:visited {
+  color: antiquewhite;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#vrVideo,
+#g-maps {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#video-L,
+#video-R {
+  height: 400px;
+  display: inline-block;
+}
+
+#vid-left,
+#vid-right {
+  padding: 10px;
+  display: inline-block;
+}
+
+#unmute-button-L,
+#unmute-button-R {
+  position: relative;
+  display: block;
+  z-index: 999999;
+  padding: 10px;
+}
+
+/* div.content-container {
+    margin: auto;
+    width: 50%;
+    max-width: 800px;
+    padding: 10%;
+}
+
+div.copy-container {
+    display: grid;
+    grid-template-columns: 45% auto;
+    overflow-y: auto;
+} */
+
+#vid-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+}
+
+/* Add some content at the bottom of the video/page */
+div.vid-content-container {
+  position: fixed;
+  bottom: 0;
+  color: antiquewhite;
+  margin: auto;
+  width: 50%;
+  max-width: 800px;
+  padding: 10%;
+}
+
+div.vid-copy-container,
+#vid-title {
+  bottom: 0;
+  transform: translate(50%);
+  display: grid;
+  grid-template-columns: 45% auto;
+  overflow: hidden;
+}
+
+/* Style the button used to pause/play the video */
+button {
+  font-family: "EB Garamond", serif;
+  border: none;
+  outline: none;
+  background-color: Transparent;
+  color: antiquewhite;
+  cursor: pointer;
+  text-decoration: underline;
+}

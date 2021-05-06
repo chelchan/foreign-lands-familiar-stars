@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Noto+Serif+TC:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Familiar Stars</title>
+  </head>
+  <body class="fl-bg">
+    <div id="vid-container">
+      <div id="vid-left">
+        <video muted autoplay loop id="video-L">
+          <source src="./assets/cc-flfs-siri-2014.mp4" type="video/mp4" />
+        </video>
+        <button id="unmute-button-L" onclick="unmuteL()" type="button">
+          Sound
+        </button>
+      </div>
+      <div id="vid-right">
+        <video muted autoplay loop id="video-R">
+          <source src="./assets/cc-flfs-siri-2021.mp4" type="video/mp4" />
+        </video>
+        <button id="unmute-button-R" onclick="unmuteR()" type="button">
+          Sound
+        </button>
+      </div>
+    </div>
+    <div class="content-container">
+      <div id="title">
+        <h2>
+          tang m shid / Conversations with Siri
+          <!-- <button id="unmute-button-1" onclick="unmute1()">Sound</button>
+          <button id="unmute-button-2" onclick="unmute2()">Sound</button> -->
+        </h2>
+      </div>
+      <div class="copy-container">
+        <div class="vocab">
+          tang m shid <span class="tc">聽毋識</span>
+          <span class="translation">cannot hear</span><br />
+          <span class="definition">Cannot understand (language.)</span><br />
+        </div>
+        <div class="description">
+          2014<br />
+          My dad (in Mandarin): “Siri, can you speak Taiwanese?”<br />
+          Siri (in Taiwanese): “Taiwanese? I can speak a little. I’m not fluent.
+          Excuse me.”<br />
+          <br />
+          2021<br />
+          Me (in Mandarin): “Siri, can you speak Taiwanese?”<br />
+          Siri (in Taiwanese): “Taiwanese? Taiwanese is not easy, I don’t speak
+          it very well.”<br />
+          <br />
+          Me: “Hey Siri, can you speak Hakka?”<br />
+          Siri: “Sorry I missed that. Could you say it again, please?”<br />
+          (Voice detection reads: Hey Siri can you speak caca)<br />
+          Me: “Siri, can you speak Hakka?”<br />
+          Siri: “Hmm… I don’t have an answer for that. Is there something else I
+          can help with?”<br />
+          (Voice detection reads: Hey Siri can you speak Hakka)<br />
+          <br />
+          Me (in Mandarin): “Siri, can you speak Hakka?”<br />
+          Siri (in Mandarin): “I can speak Mandarin and Cantonese. You can
+          change the language I use in Siri settings.”<br />
+        </div>
+      </div>
+      <h1 class="title-fl"><a href="./foreign-lands.html">Foreign Lands</a></h1>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
